@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Shopping List</title>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 <body>
 	
@@ -21,9 +22,10 @@
 		<!--ADDITEM.BOX // Contains input form to submit an item or reset list-->
 		<div class="addItem-box content">
 			<input type="text" name="addItem" placeholder="ENTER ITEM HERE OR HIT ENTER" class="addItem">
+			<div class="error"><p>Add an item above!</p></div>
 			<div class="addReset">
-			  	<button type="submit" class="button">+ Add</button>
-			  	<button type="submit" class="button">Reset</button>
+			  	<button type="submit" class="addButton button">+ Add</button>
+			  	<button type="submit" class="resetButton button">Reset</button>
 		  	</div>	
 		</div>
 	  	
@@ -51,6 +53,9 @@
 		<div class="content">
 		<p>Made with <span>&hearts;</span> by Vanessa Ogbuehi</p>
 		</div>
-	</footer>		
+	</footer>
+
+	<script type="text/javascript" src="js/applications.js"></script>
+		
 </body>
 </html>
