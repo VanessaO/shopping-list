@@ -81,11 +81,16 @@ body {
 }
 
 .content {
-	width: 55em;
+	width: 35em;
 	margin: 0 auto;
+}
+.main {
+	background: rgba(0,0,0,0.3);
 }
 
 .title {
+	width: 50em;
+	margin: 0 auto;
 	font-family: 'Arial', sans-serif;
 	text-align: right;
 }
@@ -97,5 +102,32 @@ body {
 
 	.title h2 {
 		font-size: 2em;
-
+		margin-bottom: 1rem;
 	}
+
+.addItem-box {
+}
+
+.addItem { 
+	width: 30em;
+	padding: 1em;
+  	border: solid 1px #dcdcdc;
+  	transition: box-shadow 0.3s, border 0.3s;
+  	background: rgba(255,255,255,1);
+}
+
+.button {
+	-webkit-box-shadow: 2px 2px 3px #666666;
+	-moz-box-shadow: 2px 2px 3px #666666;
+	box-shadow: 2px 2px 3px #666666;
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 1em;
+	background: #3e4f7e;
+	padding: 0.5em;
+	text-decoration: none;
+}
+
+.button:hover {
+  background: #576eb0;
+}
