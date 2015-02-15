@@ -3,7 +3,7 @@
 // Reference: http://jaydenseric.com/blog/forget-normalize-or-resets-lay-your-own-css-foundation
 
 *, *:before, *:after {
-  box-sizing: inherit;
+  	box-sizing: inherit;
 }
 
 html {
@@ -91,20 +91,16 @@ body {
 	margin: 0 auto;
 }
 
-.main {
-	margin: 2em auto;
-}
-
 .title {
 	width: 50em;
-	margin: 0 auto;
+	margin: 1em auto;
 	font-family: 'Arial', sans-serif;
 	text-align: right;
 }
 
 	.title h1 {
 		font-size: 7em;
-		margin-bottom: .50rem;
+		margin-bottom: 1rem;
 	}
 
 	.title h2 {
@@ -112,70 +108,81 @@ body {
 		margin-bottom: 1rem;
 	}
 
-.addItem {
-	width: 33.5rem;
-	padding: 1em;
-	display: block;
-}
+.main {}
 
-.addReset {
-	margin: 0 auto;
-	margin-top: 1em;
-	margin-bottom: 1em;
-	width: 12.5em;
-}
-.button {
-	-webkit-box-shadow: 2px 2px 3px #666666;
-	-moz-box-shadow: 2px 2px 3px #666666;
-	box-shadow: 2px 2px 3px #666666;
-	font-family: Arial;
-	color: #000000;
-	font-size: 20px;
-	padding: 10px 20px;
-	border: solid #000 2px;
-	text-decoration: none;
-	position: relative;
-}
+	.addItem {
+		width: 33.5rem;
+		padding: 1em;
+		display: block;
+	}
+
+	.addReset {
+		margin: 1em auto;
+		width: 12.5em;
+	}
+
+		.button {
+			-webkit-box-shadow: 2px 2px 3px #666666;
+			-moz-box-shadow: 2px 2px 3px #666666;
+			box-shadow: 2px 2px 3px #666666;
+			font-family: Arial;
+			color: #000000;
+			font-size: 20px;
+			padding: 10px 20px;
+			border: solid #000 2px;
+			text-decoration: none;
+			position: relative;
+		}
 
 .item { 
-	width: 30em;
-	margin: 0 auto;
+	width: 100%;
 	padding: .50em;
   	border-bottom: dashed 2px #000;
   }
 
-.checkbox, .item p {
-	display: inline-block;
-}
+	.checkbox, .item p {
+		display: inline-block;
+	}
 
-.item > p, .delete {
-	font-size: 3em;
-}
+	.item > p, .delete {
+		font-size: 3em;
+	}
 
-.checkbox {
-	width: 2.50em;
-	height: 2.50em;
-	border: 4px solid #000;
-}
+	.checkbox {
+		width: 2.50em;
+		height: 2.50em;
+		border: 4px solid #000;
+		text-align: center;
+	}
 
-.checkmark {
-	font-size: 2.75em;
-	color: #e50000;
-	cursor: pointer;
-}
+		.checkmark {
+			font-size: 2.75em;
+			color: #e50000;
+			cursor: pointer;
+		}
 
-.delete {
-	float: right;
-	color: #797980;
-	cursor: pointer;
-}
+	.delete {
+		float: right;
+		color: #797980;
+		cursor: pointer;
+	}
 
-.delete:hover {
-	color: #000;
-}
+		.delete:hover {
+			color: #000;
+		}
 
 .footer {
+	width: 100%;
+	margin-top: 1em;
 	padding: 3em 0;
 	background: #000;
 	color: #fff;
+	position:absolute;
+	bottom:0;
+	left:0;
+	text-align: center;
 }
+
+	.footer span {
+		color: #e50000;
+	}

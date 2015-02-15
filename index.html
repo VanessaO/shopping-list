@@ -8,16 +8,18 @@
 <body>
 	
 	<!--HEADER// Contains title and subtitle-->
-	<header class="title">
-		<h1>Shopping List.</h1>
-		<h2>Get yourself together. Make a list.</h2>
+	<header>
+		<div class="title">
+			<h1>Shopping List.</h1>
+			<h2>Get yourself together. Make a list.</h2>
+		</div>
 	</header>
 
 	<!--MAIN // Contains list maker-->
-	<section class="main content">
+	<section class="main">
 		
 		<!--ADDITEM.BOX // Contains input form to submit an item or reset list-->
-		<div class="addItem-box">
+		<div class="addItem-box content">
 			<input type="text" name="addItem" placeholder="ENTER ITEM HERE OR HIT ENTER" class="addItem">
 			<div class="addReset">
 			  	<button type="submit" class="button">+ Add</button>
@@ -26,33 +28,29 @@
 		</div>
 	  	
 		<!--LISTITEM // Contains checkbox, item, and delete button (x)-->
-	  	<ul>
-	  	<li>
-		  	<div class="item">
+	  	<ul class="content">
+	  	<li class="item">
 				<div class="checkbox"><p class="checkmark">&#10003;</p></div>
 				<p>Bread</p>
 				<p class="delete">x</p>
-			</div>
 		</li>
-		<li>
-		  	<div class="item">
-				<div class="checkbox"><p class="checkmark">&#10003;</p></div>
-				<p>Juice</p>
-				<p class="delete">x</p>
-			</div>
-		</li>
-		<li>
-		  	<div class="item">
+		<li class="item">
 				<div class="checkbox"><p class="checkmark">&#10003;</p></div>
 				<p>Cereal</p>
 				<p class="delete">x</p>
-			</div>
+		</li>
+		<li class="item">
+				<div class="checkbox"><p class="checkmark">&#10003;</p></div>
+				<p>Oranges</p>
+				<p class="delete">x</p>
 		</li>
 	</section>
 
 	<!--Contains copyright and social links-->
 	<footer class="footer">
+		<div class="content">
 		<p>Made with <span>&hearts;</span> by Vanessa Ogbuehi</p>
+		</div>
 	</footer>		
 </body>
 </html>
