@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shopping List</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	
+	<!--HEADER// Contains title and subtitle-->
+	<header class="title">
+		<h1>Shopping List.</h1>
+		<p>Get yourself together. Make a list.</p>
+	</header>
+
+	<!--MAIN // Contains list maker-->
+	<section class="main">
+		
+		<!--ADDITEM.BOX // Contains input form to submit an item or reset list-->
+		<div class="addItem-box">
+			<input type="text" name="addItem" placeholder="ENTER ITEM HERE OR HIT ENTER">
+		  	<button type="submit" id="add">+ Add</button>
+		  	<button type="submit" id="reset">Reset</button>		
+		</div>
+	  	
+		<!--LISTITEM // Contains checkbox, item, and delete button (x)-->
+	  	<div class="listItem">
+			<div class="checkbox"><p class="checkmark">&#10003;</p></div>
+			<p>Bread</p>
+			<p class="xDelete">x</p>
+		</div>
+		<div class="listItem">
+			<div class="checkbox"><p class="checkmark">&#10003;</p></div>
+			<p>Pasta</p>
+			<p class="xDelete">x</p>
+		</div>
+		<div class="listItem">
+			<div class="checkbox"><p class="checkmark">&#10003;</p></div>
+			<p>Cereal</p>
+			<p class="xDelete">x</p>
+		</div>
+	</section>
+
+	<!--Contains copyright and social links-->
+	<footer>
+		<p>Made with <span>&hearts;</span> by Vanessa Ogbuehi</p>
+	</footer>		
+</body>
+</html>
