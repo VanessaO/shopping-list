@@ -2,12 +2,18 @@
 
 // Reference: http://jaydenseric.com/blog/forget-normalize-or-resets-lay-your-own-css-foundation
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 html {
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	-webkit-tap-highlight-color: transparent;
+	-webkit-tap-highlight-color: transparent; 
+	box-sizing: border-box;
+
 }
 
 body {
@@ -76,16 +82,17 @@ body {
 	background-color: #FCDB7D;
 }
 
-* {
+/* * {
 	border: 1px solid red;
-}
+}*/
 
 .content {
 	width: 35em;
 	margin: 0 auto;
 }
+
 .main {
-	background: rgba(0,0,0,0.3);
+	margin: 2em auto;
 }
 
 .title {
@@ -105,29 +112,70 @@ body {
 		margin-bottom: 1rem;
 	}
 
-.addItem-box {
-}
-
-.addItem { 
-	width: 30em;
+.addItem {
+	width: 33.5rem;
 	padding: 1em;
-  	border: solid 1px #dcdcdc;
-  	transition: box-shadow 0.3s, border 0.3s;
-  	background: rgba(255,255,255,1);
+	display: block;
 }
 
+.addReset {
+	margin: 0 auto;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	width: 12.5em;
+}
 .button {
 	-webkit-box-shadow: 2px 2px 3px #666666;
 	-moz-box-shadow: 2px 2px 3px #666666;
 	box-shadow: 2px 2px 3px #666666;
 	font-family: Arial;
-	color: #ffffff;
-	font-size: 1em;
-	background: #3e4f7e;
-	padding: 0.5em;
+	color: #000000;
+	font-size: 20px;
+	padding: 10px 20px;
+	border: solid #000 2px;
 	text-decoration: none;
+	position: relative;
 }
 
-.button:hover {
-  background: #576eb0;
+.item { 
+	width: 30em;
+	margin: 0 auto;
+	padding: .50em;
+  	border-bottom: dashed 2px #000;
+  }
+
+.checkbox, .item p {
+	display: inline-block;
+}
+
+.item > p, .delete {
+	font-size: 3em;
+}
+
+.checkbox {
+	width: 2.50em;
+	height: 2.50em;
+	border: 4px solid #000;
+}
+
+.checkmark {
+	font-size: 2.75em;
+	color: #e50000;
+	cursor: pointer;
+}
+
+.delete {
+	float: right;
+	color: #797980;
+	cursor: pointer;
+}
+
+.delete:hover {
+	color: #000;
+}
+
+.footer {
+	padding: 3em 0;
+	background: #000;
+	color: #fff;
 }

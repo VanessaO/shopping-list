@@ -19,30 +19,39 @@
 		<!--ADDITEM.BOX // Contains input form to submit an item or reset list-->
 		<div class="addItem-box">
 			<input type="text" name="addItem" placeholder="ENTER ITEM HERE OR HIT ENTER" class="addItem">
-		  	<button type="submit" class="button">+ Add</button>
-		  	<button type="submit" class="button">Reset</button>		
+			<div class="addReset">
+			  	<button type="submit" class="button">+ Add</button>
+			  	<button type="submit" class="button">Reset</button>
+		  	</div>	
 		</div>
 	  	
 		<!--LISTITEM // Contains checkbox, item, and delete button (x)-->
-	  	<div class="listItem">
-			<div class="checkbox"><p class="checkmark">&#10003;</p></div>
-			<p>Bread</p>
-			<p class="xDelete">x</p>
-		</div>
-		<div class="listItem">
-			<div class="checkbox"><p class="checkmark">&#10003;</p></div>
-			<p>Pasta</p>
-			<p class="xDelete">x</p>
-		</div>
-		<div class="listItem">
-			<div class="checkbox"><p class="checkmark">&#10003;</p></div>
-			<p>Cereal</p>
-			<p class="xDelete">x</p>
-		</div>
+	  	<ul>
+	  	<li>
+		  	<div class="item">
+				<div class="checkbox"><p class="checkmark">&#10003;</p></div>
+				<p>Bread</p>
+				<p class="delete">x</p>
+			</div>
+		</li>
+		<li>
+		  	<div class="item">
+				<div class="checkbox"><p class="checkmark">&#10003;</p></div>
+				<p>Juice</p>
+				<p class="delete">x</p>
+			</div>
+		</li>
+		<li>
+		  	<div class="item">
+				<div class="checkbox"><p class="checkmark">&#10003;</p></div>
+				<p>Cereal</p>
+				<p class="delete">x</p>
+			</div>
+		</li>
 	</section>
 
 	<!--Contains copyright and social links-->
-	<footer class="footer content">
+	<footer class="footer">
 		<p>Made with <span>&hearts;</span> by Vanessa Ogbuehi</p>
 	</footer>		
 </body>
