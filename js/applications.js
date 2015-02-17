@@ -10,13 +10,13 @@ $(document).ready(function() {
 
         else {
             //alert('Something is gonna happen');
-            $('ul').append('<li class="item"><div class="checkbox"><p class="checkmark">&#10003;</p></div><p>' + $('.addItem').val() + '</p><p class="delete">x</p>');
+            $('<li class="item"> <div class="checkbox"> <p class="checkmark">&#10003;</p> </div> <p>' + $('.addItem').val() + '</p> <p class="delete">x</p>').appendTo('ul');
             $('.error').hide();
         };
-    })
+    });
 
-    $('.checkbox').click(function() {
-        $(this).children("p").toggle();
+    $(document).on('click', '.checkbox' , function() {
+        $(this).children('.checkmark').toggle();
 
     })
 })
