@@ -22,7 +22,7 @@ $(document).ready(function() {
 
     //Removes item from list when 'x' is clicked
     $(document).on('click', '.delete', function() {
-        $(this).parent('.item').remove();
+        $(this).parent('.item').fadeOut(450);
     })
 
     //Sets 'reset' button
