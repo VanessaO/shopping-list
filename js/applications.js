@@ -18,6 +18,10 @@ $(document).ready(function() {
     //Toggles check marks for current abd future items
     $(document).on('click', '.checkbox' , function() {
         $(this).children('.checkmark').toggle();
+    })
 
+    //Removes item from list when 'x' is clicked
+    $(document).on('click', '.delete', function() {
+        $(this).parent('.item').remove();
     })
 })

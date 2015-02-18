@@ -188,14 +188,18 @@ body {
 			color: #000;
 		}
 
-.footer {
-	margin-top: 9em;
-    height: 100px;
+footer {
     width: 100%;
-	background-color: #fff;
+    background-color: #000000;    
 }
 
-	.footer span {
+footer p {
+	color: #fff;
+	text-align: center;
+	padding: 2em 0;
+}
+
+	footer span {
 		color: #e50000;
 	}
 
