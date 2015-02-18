@@ -15,6 +15,7 @@ $(document).ready(function() {
         };
     });
 
+    //Toggles check marks for current abd future items
     $(document).on('click', '.checkbox' , function() {
         $(this).children('.checkmark').toggle();
 
