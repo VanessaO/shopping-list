@@ -24,4 +24,10 @@ $(document).ready(function() {
     $(document).on('click', '.delete', function() {
         $(this).parent('.item').remove();
     })
+
+    //Sets 'reset' button
+    $(document).on("click", ".resetButton", function(){
+        $('ul').empty();
+        submissions = 0;
+    })
 })
