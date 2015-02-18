@@ -30,4 +30,11 @@ $(document).ready(function() {
         $('ul').empty();
         submissions = 0;
     })
+
+    //Add item with enter button
+    $('.addItem').keyup(function(event){
+        if(event.keyCode == 13) {
+            $('.addButton').click();
+        };
+    })
 })

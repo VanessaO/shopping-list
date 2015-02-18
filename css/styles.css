@@ -162,6 +162,7 @@ body {
 		font-size: 3em;
 		font-weight: 200;
 		vertical-align: top;
+		text-transform: capitalize;
 	}
 
 	.checkbox {
