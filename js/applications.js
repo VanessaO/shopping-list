@@ -13,7 +13,7 @@ $(document).ready(function() {
             $('<li class="item"> <div class="checkbox"> <p class="checkmark">&#10003;</p> </div> <p>' + $('.addItem').val() + '</p> <p class="delete">x</p>').appendTo('ul');
             $('.error').hide();
         };
-    });
+    })
 
     //Toggles check marks for current abd future items
     $(document).on('click', '.checkbox' , function() {
